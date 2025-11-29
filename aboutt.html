@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="halaman About dengan tailwin" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="abaut.js" defer></script>
+    <title>About Us</title>
+    <style>
+      .about-hero {
+        display: flex;
+        gap: 2rem; 
+      }
+      .aboutme {
+        flex: 1;
+      }
+      .image-hero {
+        flex: 1;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="bg-[#580e0e] flex justify-between p-4 px-8">
+        <div class="text-white">Aska</div>
+
+        <div
+          id="hiden"
+          class="bg-red-500 text-2xl p-2 rounded md:hidden flex items-center cursor-pointer"
+        >
+          <i class="ph ph-list text-white"></i>
+        </div>
+
+        <ul
+          id="menu-list"
+          class="flex list-none items-center gap-4 text-white md:flex-row flex-col w-full md:w-auto h-0 md:h-auto overflow-hidden md:overflow-visible transition-all duration-300"
+        >
+          <li>
+            <a
+              href="#"
+              class="no-underline text-[#311010] hover:text-white transition-colors"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="no-underline text-[#311010] hover:text-white transition-colors"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="no-underline text-[#311010] hover:text-white transition-colors"
+              >Contacts</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="p-8">
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-8 my-16">
+        <div class="aboutme space-y-4">
+          <h1 class="text-4xl font-bold">About me</h1>
+          <p class="text-gray-600">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur at
+            optio harum pariatur reiciendis iure doloribus ab rem. Officiis
+            totam laudantium quibusdam obcaecati neque iusto. Necessitatibus
+            officia quia cum inventore?
+          </p>
+          <div class="btn pt-4">
+            <a
+              href=""
+              class="inline-block bg-red-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-red-700 transition-colors"
+              >Resume</a
+            >
+          </div>
+        </div>
+        <div class="image-hero relative flex justify-center items-center">
+          <div
+            class="background-img absolute w-full h-full bg-gray-200 rounded-lg transform translate-x-4 translate-y-4 hidden md:block"
+          ></div>
+          <div
+            class="main-img relative z-10  max-w-sm"
+          >
+            <img
+              src="./img/foto111.png"
+              alt="Foto Profil"
+              class=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <form
+        class="contact-form max-w-lg mx-auto p-8 border rounded-xl shadow-lg my-16 space-y-6"
+      >
+        <h2 class="text-3xl font-semibold text-center mb-6">Contact Us</h2>
+        <div class="form-group space-y-1">
+          <label for="name" class="block font-medium text-gray-700">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-red-500 focus:border-red-500"
+          />
+        </div>
+
+        <div class="form-group space-y-1">
+          <label for="email" class="block font-medium text-gray-700"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="youremail@example.com"
+            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-red-500 focus:border-red-500"
+          />
+        </div>
+
+        <div class="form-group space-y-1">
+          <label for="message" class="block font-medium text-gray-700"
+            >Message</label
+          >
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Your message..."
+            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-red-500 focus:border-red-500"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="submit-button w-full bg-red-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-red-700 transition-colors shadow-md"
+        >
+          Send
+        </button>
+      </form>
+    </main>
+
+    <footer class="">
+      <div class="flex justify-center gap-4 mb-4">
+        <a href="" class="hover:opacity-80 transition-opacity">
+          <img src="img/Vector.svg" alt="Social Media Icon" class="w-10 h-10" />
+        </a>
+        <a href="" class="hover:opacity-80 transition-opacity">
+          <img src="img/linkin.svg" alt="LinkedIn Icon" class="w-10 h-10" />
+        </a>
+        <a href="" class="hover:opacity-80 transition-opacity">
+          <img src="img/email.svg" alt="Email Icon" class="w-10 h-10" />
+        </a>
+      </div>
+      <p class="text-center">Aska Diliyan perkasa</p>
+      <img
+        class="f-img mx-auto"
+        src="./img/footer.svg"
+        alt="Footer decoration"
+      />
+    </footer>
+  </body>
+</html>
